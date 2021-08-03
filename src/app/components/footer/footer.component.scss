@@ -1,0 +1,60 @@
+.backg{
+    background: linear-gradient(to right,#231a60 0%,#3c338d 51%,#231a60 100%);
+}
+.container .row{
+    padding: 0;
+}
+
+h3{
+    font-weight: 500;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #3fcaff;
+    cursor: pointer;
+}
+
+hr{
+    padding: 0;
+    color: rgba(255,255,255,0.5);
+}
+
+i{
+    margin: 3px 0px 0px 3px;
+    color: white;
+}
+
+p{font-weight: 500;}
+
+p a{color: #3fcaff;}
+
+@media(min-width: 992px){
+    hr{
+        margin-left: 70px;
+        width: 80%;
+    }
+}
+// .square{
+//     height: 30px;
+//     width: 30px;
+//     display: inline-block;
+//     background-color: #4c4588;
+// }
+
+
+// .square:hover{
+//     background-color: #3fcaff;
+//     text-decoration: none;
+//     transition: all .6 ease-in-out;
+// }   

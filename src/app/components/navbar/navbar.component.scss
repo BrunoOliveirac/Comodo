@@ -1,0 +1,101 @@
+.row{margin: 0;}
+
+.ativo{color: #00C9FF !important;}
+
+a:hover{cursor: pointer;}
+
+.nav-link:hover{color: #00C9FF !important;}
+
+.btn-grad {background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%)}
+.btn-grad {
+    border: none;
+    font-weight: 500;
+    padding: 10px 40px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    border-radius: 35px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    text-decoration: none;}
+    
+.navbar-toggler{border: none;}
+
+.navbar-toggler-icon{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+
+li{list-style-type: none;}
+
+.uldrop{
+    position: absolute;
+    display: none;
+    padding: 0;
+    transition: all 150ms linear;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+
+}
+ul.uldrop .lidrop{border-bottom: 1px solid #ddd;}
+ul.uldrop .lidrop:last-child{border-bottom: none;}
+
+.drop{
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.drop:hover{
+    color: white !important;
+    background-image: -webkit-linear-gradient(0deg ,#4dabff 0%,#62ddff 100%);
+}
+
+@media(min-width: 992px){
+    button.btn-grad{margin-left: 10%;}
+    .logo{margin-left: 47%;}
+    .navbar{background-color: rgb(57, 17, 136) !important;}
+    .nav-link1{margin-left: 1em !important;}
+    .nav-link{margin-left: 1.5em;}
+    .btn-grad{margin-left: 20em;}
+    .dropdown:hover .uldrop{display: block;}
+    .uldrop{left: 30px;}
+    .lidrop{width: 200px;}
+}
+
+@media(min-width: 1200px) and (max-width: 1400px){
+    button.btn-grad{
+        margin-left: 27% !important;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+    .btn-grad{position: absolute;
+        top: 10px;
+        right: 30px;}
+}
+
+@media(max-width: 991px){
+    .navbar{
+        background-color: black !important;
+        padding-top: 0px;
+        padding-bottom: 0px;}
+    .nav-link{margin-left: 20px;}
+    .btn-grad{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    .dropdown:hover .uldrop{
+        display: block;
+        width: 100px;
+    }
+    .uldrop{position: relative;}
+    .lidrop{width: 720% !important;}
+    .navbar-nav .nav-item{border-bottom: 1px solid #333; width: 93.5%;;}
+    .navbar-nav .nav-item:last-child{border-bottom: none;}
+}
+
+@media(max-width: 761px){
+    .lidrop{width: 385% !important;}
+}

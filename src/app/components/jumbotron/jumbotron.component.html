@@ -1,0 +1,77 @@
+<div class="jumbotron">    
+    <div class="ct1 mt-5">
+        <div class="container">
+            <div class="row pt-md-4">
+                <div class="col-6 col-md-4 col-lg-4 mt-5 d-flex justify-content-center justify-content-lg-end">
+                    <button type="button" class="btn-grad" (click)="jumbo(0)">Live Streaming</button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 mt-5 d-flex justify-content-center">
+                    <button type="button" class="btn-grad" (click)="jumbo(1)">Upcoming Challanges</button>
+                </div>
+                <div class="mt-4 col-md-4 col-lg-4 mt-md-5 d-flex justify-content-center justify-content-lg-start">
+                    <button type="button" class="btn-grad" (click)="jumbo(2)">Recent Famous Games</button>
+                </div>
+                <ng-template [ngIf]="value == 0">
+                    <div class="row">
+                        <div class="col-lg-6 mt-lg-5 d-lg-flex justify-content-lg-end pe-lg-0">
+                            <img src="/assets/image-lg2.png" alt="image lg2" class="image-lg2">
+                        </div>
+                    <div class="container col-lg-6 ct2 mt-4 mt-md-5">
+                        <div class="tab-pane fade show active" role="tabpanel">
+                            <div class="row ms-md-4">
+                                <p class="pt-4 pt-md-5 px-4 text-light p1">ABOUT US</p>
+                                <h5 class="px-4 pt-md-3 text-light pt-1">We Believe that<br>Superior beauty lasts Long</h5>
+                                <p class="px-4 pt-md-3">inappropriate behavior is often laughed off as "boys will be boys", women face higher conduct
+                                    standards especially in the workplace. That's why it's crucial that as women</p>
+                                </div>
+                                <div class="row col-8 ms-md-4 px-4 pt-2 pt-lg-4">
+                                    <button type="button" class="btn-grad2 mt-2 mb-5">LEARN MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template [ngIf]="value == 1">
+                    <div class="row">
+                        <div class="col-lg-6 mt-lg-5 d-lg-flex justify-content-lg-end pe-lg-0">
+                            <img src="/assets/image-lg2.png" alt="image lg2" class="image-lg2">
+                        </div>
+                    <div class="container col-lg-6 ct2 mt-4 mt-md-5">
+                        <div class="tab-pane fade show active" role="tabpanel">
+                            <div class="row ms-md-4">
+                                <p class="pt-4 pt-md-5 px-4 text-light p1">ABOUT US</p>
+                                <h5 class="px-4 pt-md-3 text-light pt-1">We Believe that<br>Inferior beauty lasts Long</h5>
+                                <p class="px-4 pt-md-3">inappropriate behavior is often laughed off as "boys will be boys", women face higher conduct
+                                    standards especially in the workplace. That's why it's crucial that as women</p>
+                                </div>
+                                <div class="row col-8 ms-md-4 px-4 pt-2 pt-lg-4">
+                                    <button type="button" class="btn-grad2 mt-2 mb-5">LEARN MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template [ngIf]="value == 2">
+                    <div class="row">
+                        <div class="col-lg-6 mt-lg-5 d-lg-flex justify-content-lg-end pe-lg-0">
+                            <img src="/assets/image-lg2.png" alt="image lg2" class="image-lg2">
+                        </div>
+                    <div class="container col-lg-6 ct2 mt-4 mt-md-5">
+                        <div class="tab-pane fade show active" role="tabpanel">
+                            <div class="row ms-md-4">
+                                <p class="pt-4 pt-md-5 px-4 text-light p1">ABOUT US</p>
+                                <h5 class="px-4 pt-md-3 text-light pt-1">We Believe that<br>Right beauty lasts Long</h5>
+                                <p class="px-4 pt-md-3">inappropriate behavior is often laughed off as "boys will be boys", women face higher conduct
+                                    standards especially in the workplace. That's why it's crucial that as women</p>
+                                </div>
+                                <div class="row col-8 ms-md-4 px-4 pt-2 pt-lg-4">
+                                    <button type="button" class="btn-grad2 mt-2 mb-5">LEARN MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

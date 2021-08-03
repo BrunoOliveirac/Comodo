@@ -1,0 +1,88 @@
+.row{margin: 0;}
+
+.p2{
+    color: black;
+    font-size: 30px;
+    padding-top: 14%;
+    text-align: center;
+}
+
+.p3{
+    font-size: 32px;
+    margin-top: -45px;
+    text-align: center;
+    color: #3fcaff;
+    opacity: 15%;
+    position: relative;
+}
+
+.btn-grad {
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg , rgb(0, 201, 255) , rgb(146, 254, 157));
+    border-image-slice: 1;
+    font-weight: 500;
+    width: 181px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.btn-grad:hover{
+    background-image:  linear-gradient(to right, rgb(0, 201, 255) 0%, rgb(146, 254, 157)  51%, rgb(0, 201, 255)  100%);
+    text-decoration: none;
+    color: black;
+
+}
+
+.card-body{
+    background: linear-gradient(to right,#231a60 0%,#3c338d 51%,#231a60 100%) !important;
+}
+
+p{color: #ddd;}
+
+hr{
+    border:none;
+    border-top: 2px dotted gray;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width: 75%;
+    margin-left: 45px;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.faixa{
+    background: #342b7e;
+
+    height: 80px;}
+
+h1{
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 25px;
+}
+
+@media(min-width: 762px) and (max-width: 991px){.medhidden{display: none;}}
+
+@media(min-width: 762px){
+    .p2{
+        font-size: 36px;
+    }
+    .p3{
+        font-size: 72px;
+    }
+}
+
+@media(min-width: 992px){
+    div.card{
+        width: 350px;
+        height: 480px;
+    }
+}

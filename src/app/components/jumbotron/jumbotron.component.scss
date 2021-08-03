@@ -1,0 +1,115 @@
+.row{
+    margin: 0;
+}
+
+.image-lg2{
+    display: none;
+}
+
+.ct1{
+    background-image: url(\src\assets\body.png);
+    height: 580px;
+    font-size: 12px;
+}
+
+.ct2{
+    background: linear-gradient(to right,#3e3590 0%,#231a60 100%);
+}
+
+.btn-grad {
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg , rgb(0, 201, 255) , rgb(146, 254, 157));
+    border-image-slice: 1;
+    font-weight: 500;
+    width: 181px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    border-radius: 8px;
+    display: block;
+    color: white;
+}
+
+.btn-grad:hover{
+    background-image:  linear-gradient(to right, rgb(0, 201, 255) 0%, rgb(146, 254, 157)  51%, rgb(0, 201, 255)  100%);
+    text-decoration: none;
+    color: black;
+}
+
+.p1{
+    font-size: 14px;
+}
+
+p{
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.btn-grad2 {background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%);
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    border-radius: 8px;
+    display: block;
+}
+ 
+.btn-grad2:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+
+@media(max-width: 991px){
+    .ct2{width: 92%;}
+    .btn-grad2{
+        width: 140px;
+        height: 45px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .h5{
+        font-size: 36px;
+    }
+    .btn-grad2{
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media(min-width: 992px){
+    .image-lg2{
+        display: block;
+    }
+    .btn-grad{
+        width: 320px;
+        font-size: 17px;
+    }
+    .btn-grad2{
+        width: 180px;
+        height: 50px;
+    }
+    .ct1{
+        height: 800px;
+    }
+    .ct2{
+        width: 555px;
+        margin-left: 0px;
+    }
+    h5{
+        font-size: 36px;
+        line-height: 50px;
+    }
+}

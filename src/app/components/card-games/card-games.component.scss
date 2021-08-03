@@ -1,0 +1,79 @@
+.row{margin: 0;}
+
+.p2{
+    color: black;
+    font-size: 30px;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.p3{
+    font-size: 32px;
+    margin-top: -45px;
+    text-align: center;
+    color: #3fcaff;
+    opacity: 15%;
+    position: relative;
+}
+
+.card{
+    background-image: url(\src\assets\card1.png);
+    background-repeat: no-repeat;
+    border: none;
+    margin: auto;
+    border-radius: 15px;
+    width: 267px;
+    height: 350px;
+}
+
+.card1{background-image: url(\src\assets\card2.png);}
+.card2{background-image: url(\src\assets\card3.png);}
+.card3{background-image: url(\src\assets\card4.png);}
+
+
+.card-body .faixa{
+    margin-left: -16px;
+    margin-top: 125px;
+    width: 263px;
+    border: none;
+    font-weight: 500;
+    padding: 10px 40px;
+    text-align: center;
+    background-size: 200% auto;
+    display: block;
+    background-color: #22195E;
+    opacity: 60%;
+}
+
+.card-body:hover .faixa{
+    background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%);
+    border: none;
+    font-weight: 500;
+    padding: 10px 40px;
+    text-align: center;
+    background-size: 200% auto;
+    display: block;
+    opacity: 100%;
+}
+.card-body:hover .faixa .card-title{
+    color: #22195E;
+}
+
+.card-body .faixa .card-title{
+    color: white;
+}
+
+@media(min-width: 768px){
+    .p2{
+        font-size: 36px;
+    }
+    .p3{
+        font-size: 72px;
+    }
+}
+
+@media(min-width: 992px){
+    .row{
+        margin-left: 220px;
+    }
+}
