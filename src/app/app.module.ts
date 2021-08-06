@@ -17,14 +17,15 @@ import { QuestionsComponent } from './components/questions/questions.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PageAboutComponent } from './components/pages/page-about/page-about.component';
-import { PageGalleryComponent } from './components/pages/page-gallery/page-gallery.component';
 import { PagePricingComponent } from './components/pages/page-pricing/page-pricing.component';
 import { PageGamesComponent } from './components/pages/page-games/page-games.component';
 import { PageElementsComponent } from './components/pages/page-elements/page-elements.component';
 import { PageBlogComponent } from './components/pages/page-blog/page-blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { PageContactComponent } from './components/pages/page-contact/page-contact.component';
+import { PageHomeComponent } from './components/pages/page-home/page-home.component';
+import { PageAboutComponent } from './components/pages/page-about/page-about.component';
+import { PageGalleryComponent } from './components/pages/page-gallery/page-gallery.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { PageContactComponent } from './components/pages/page-contact/page-conta
     PageBlogComponent,
     BlogDetailsComponent,
     PageContactComponent,
+    PageHomeComponent,
   ],
   imports: [
     BrowserModule,

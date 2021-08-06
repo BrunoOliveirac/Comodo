@@ -1,0 +1,28 @@
+.row{margin: 0;}
+
+.back{
+    background-image: url(\src\assets\images\body1.jpg);
+    height: 350px;
+}
+
+p{
+    color: #666;
+    line-height: 30px;
+    b, i, sup, sub, del, u{color: #3fcaff;}
+}
+
+div.back a, i{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div.back a:hover{color: #00C9FF}
+
+.container{border-bottom: 1px #eee solid;}
+
+
+h1{
+    font-size: 32px;
+    font-weight: 500;
+}
