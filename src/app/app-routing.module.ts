@@ -9,6 +9,7 @@ import { PageElementsComponent } from './components/pages/page-elements/page-ele
 import { PageGalleryComponent } from './components/pages/page-gallery/page-gallery.component';
 import { PageGamesComponent } from './components/pages/page-games/page-games.component';
 import { PageHomeComponent } from './components/pages/page-home/page-home.component';
+import { PageLoginComponent } from './components/pages/page-login/page-login.component';
 import { PagePricingComponent } from './components/pages/page-pricing/page-pricing.component';
 
 const routes: Routes = [
@@ -27,11 +28,11 @@ const routes: Routes = [
      {path: 'details', component: BlogDetailsComponent},
    ]},
    {path: 'contact', component: PageContactComponent},
+   {path: 'login', component: PageLoginComponent}
 ]; 
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes
-    // {scrollPositionRestoration: 'enabled'}
+  imports: [BrowserModule, RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'}
     )],
   exports: [RouterModule]
 })

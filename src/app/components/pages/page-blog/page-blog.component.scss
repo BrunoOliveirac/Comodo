@@ -1,0 +1,141 @@
+.body{background-color: #f8f9fa;}
+
+.row{margin: 0;}
+
+i{width: 30px;}
+
+div.position-absolute{
+    background: rgba(34, 34, 34, 0.8);
+    top: 40px;
+    bottom: 20px;
+    left: 60px;
+    right: 60px;
+    a{color: white !important;}
+    h2{
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    hr{
+        height: 2px;
+        width: 70%;
+        color: white;
+    }
+}
+
+div.position-absolute:hover{
+    background-color: rgb(63, 202, 255, .8);
+    transition: all .8s ease;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+a{text-decoration: none;}
+
+a:hover h2.text-capitalize{
+    color: #3fcaff;
+    transition: all .5s ease 0s;
+}
+
+.container.pb-5 .row p{color: #777;}
+
+div.ps-4 a span.material-icons{
+    font-size: 16px;
+    color: #ccc;
+}
+
+a.bg-white.text-dark:hover{
+    background-color: #3fcaff !important;
+    color: white !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.coments{border: 1px #eee solid;}
+
+aside.search input.input-search{
+    border: none;
+    border-radius: 45px !important;
+    background-color: #3fcaff;
+    height: 38px;
+    color: white;
+}
+
+aside.search input.input-search:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+aside.search .input-group button{
+    background: transparent;
+    border: 0;
+    right: 20px;
+    top: 5px;
+}
+
+.coments aside.search ::-webkit-input-placeholder {color: white;}
+
+hr{color: #bbb}
+
+aside{
+    text-align: center;
+    border-bottom: 1px #eee solid;
+    padding: 30px 0px;
+}
+
+aside ul li{
+    list-style: none;
+    border-bottom: 2px #eee dotted;
+}
+
+.input-group-text{
+    background-color: white;
+    border: none;
+}
+
+aside.newsletter .input-group{
+    label{
+        font-size: 16px;
+        height: 35px;
+    }
+    ::-webkit-input-placeholder{color: #ddd;}
+    button{
+        border-radius: 0px;
+        font-weight: 500;
+    }
+    input, button{
+        outline: none;
+        border: none;
+        box-shadow: none;
+        font-size: 13px;
+        height: 35px;
+    }
+}
+
+aside div.tag-list a{
+    list-style: none;
+    color: black;
+    border: 1px #eee solid;
+    background-color: white;
+    transition: all .3s ease 0s;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px 2px;
+}
+
+.tags{border-bottom: none;}
+
+nav ul li a{
+    padding: 10px 16px;
+    border: none;
+    color: #8a8a8a;
+}
+
+nav ul li a:hover{
+    color: white;
+    background-color: #3fcaff;
+    transition: all .4s ease 0s;
+}

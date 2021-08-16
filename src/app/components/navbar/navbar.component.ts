@@ -9,13 +9,18 @@ import { Router } from '@angular/router';
 
 export class NavbarComponent implements OnInit {
 
+  
   constructor(private router: Router) {}
-
+  
   ngOnInit(): void {
-  }
+    
+    const menu: any = document.querySelector('.menu')
+    const listItem: any = document.querySelector('.listItem')
 
-  homepage(){
-    this.router.navigate(['/about'])
+    listItem.addEventListener('click', function(){
+      menu.classList.remove('show')
+   })
+   
   }
 
 }

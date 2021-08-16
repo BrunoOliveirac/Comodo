@@ -1,0 +1,175 @@
+.body{background-color: #f8f9fa;}
+
+.row{margin: 0;}
+
+.back{
+    background-image: url(\src\assets\images\body1.jpg);
+    height: 350px;
+}
+
+i{width: 30px;}
+
+div.back a, i{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div.back a:hover{color: #00C9FF;}
+
+.linebottom{border-bottom: 1px #eee solid;}
+
+h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: #3fcaff;
+}
+
+.container .row p{color: #777;}
+
+div.bg-white{font-weight: 500;}
+
+div.ps-4 a span.material-icons{
+    font-size: 16px;
+    color: #ccc;
+}
+div.ps-4 a span.material-icons:hover{color: black;}
+
+div.arrow{
+    padding: 18px 17px 13px 18.5px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
+div.flex-row:hover .arrow{
+    display: block;
+    background-color: black;
+    opacity: 50%;
+}
+
+.coments{
+    border: 1px #eee solid;
+}
+
+.coments .reply{
+    width: 70px;
+    height: 30px;
+    font-weight: 500;
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+}
+
+
+input{
+    border: none;
+    line-height: 35px;
+}
+
+input:focus, textarea:focus{
+    outline: 1px #ddd solid;
+}
+
+textarea{
+    height: 130px;
+    resize: none;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%);
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;   
+    border-radius: 6px;
+    width: 170px;
+    height: 45px;
+}
+ 
+.btn-grad:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+
+aside.search input.input-search{
+    border: none;
+    border-radius: 45px !important;
+    background-color: #3fcaff;
+    height: 38px;
+    color: white;
+}
+
+aside.search input.input-search:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+aside.search .input-group button{
+    background: transparent;
+    border: 0;
+    right: 20px;
+    top: 5px;
+}
+
+.coments aside.search ::-webkit-input-placeholder {color: white;}
+
+hr{color: #bbb}
+
+aside{
+    text-align: center;
+    border-bottom: 1px #eee solid;
+    padding: 30px 0px;
+}
+
+aside ul li{
+    list-style: none;
+    border-bottom: 2px #eee dotted;
+}
+
+.input-group-text{
+    background-color: white;
+    border: none;
+}
+
+aside.newsletter .input-group{
+    label{
+        font-size: 16px;
+        height: 35px;
+    }
+    ::-webkit-input-placeholder{color: #ddd;}
+    button{
+        border-radius: 0px;
+        font-weight: 500;
+    }
+    input, button{
+        outline: none;
+        border: none;
+        box-shadow: none;
+        font-size: 13px;
+        height: 35px;
+    }
+}
+
+aside div.tag-list a{
+    list-style: none;
+    color: black;
+    border: 1px #eee solid;
+    background-color: white;
+    transition: all .3s ease 0s;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px 2px;
+}
+
+.tags{border-bottom: none;}

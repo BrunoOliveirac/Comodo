@@ -11,16 +11,17 @@ p{
     b, i, sup, sub, del, u{color: #3fcaff;}
 }
 
+i{width: 30px;}
+
 div.back a, i{
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-div.back a:hover{color: #00C9FF}
+div.back a:hover{color: #00C9FF;}
 
 .container{border-bottom: 1px #eee solid;}
-
 
 h1{
     font-size: 32px;

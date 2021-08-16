@@ -1,38 +1,42 @@
-.row{
-    margin: 0;
-}
+.row{margin: 0;}
 
-.cont{
-    background-image: url(\src\assets\images\carousel.png);
-    margin: 18px 3px;
-    margin: 0;
-    color: white;
-    text-align: center;
-}
+// .container{
+//     background-image: url
+//     margin: 18px 3px;
+//     margin: 0;
+//     color: white;
+//     text-align: center;
+// }
+.carousel-cell{background-image: url(\src\assets\images\carousel.png);}
 
 img{
-    width: 130px;
-    height: 90px;
-    margin: 30px 150px 0px;
+    width: 180px !important;
+    height: 100px !important;
 }
 
-i{
-    color: rgb(218, 151, 29);
-    size: 50px;
-}
+ i{
+     color: rgb(218, 151, 29);
+     size: 50px;
+ }
 
-p{
-    font-size: 13px;
-    font-style: italic;
-}
+ p{
+     font-size: 13px;
+     font-style: italic;
+ }
 
-.hidden{display: none;}
+
+@media(min-width: 762px){
+     p{
+         font-size: 17px;
+         margin: 0 90px;
+    }
+}
 
 @media(min-width: 992px){
-    .cont{
-        height: 500px;
+     p{
+         font-size: 20px;
+         margin: 0 32%;
+         line-height: 28px;
     }
-    p{
-        font-size: 18px;
-    }
+    .carousel{height: 450px !important;}
 }

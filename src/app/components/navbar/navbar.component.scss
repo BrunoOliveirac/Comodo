@@ -23,32 +23,28 @@ a:hover{cursor: pointer;}
     text-decoration: none;}
     
 .navbar-toggler{border: none;}
+.navbar-toggler:hover{box-shadow: none;}
 
 .navbar-toggler-icon{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
 
 li{list-style-type: none;}
 
-.uldrop{
-    position: absolute;
-    display: none;
-    padding: 0;
-    transition: all 150ms linear;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
 
-}
-ul.uldrop .lidrop{border-bottom: 1px solid #ddd;}
-ul.uldrop .lidrop:last-child{border-bottom: none;}
+.dropdown-toggle::after{content: none;}
 
-.drop{
+ul.dropdown-menu li{border-bottom: 1px solid #ddd;}
+ul.dropdown-menu li:last-child{border-bottom: none;}
+
+.dropdown-item{
+    font-size: 14px;
     font-weight: 500;
-    background-color: white;
-    color: black;
     text-decoration: none;
+    border-radius: 0 !important;
 }
 
-.drop:hover{
-    color: white !important;
+.dropdown-item:hover{
     background-image: -webkit-linear-gradient(0deg ,#4dabff 0%,#62ddff 100%);
+    color: white !important;
 }
 
 @media(min-width: 992px){
@@ -58,9 +54,7 @@ ul.uldrop .lidrop:last-child{border-bottom: none;}
     .nav-link1{margin-left: 1em !important;}
     .nav-link{margin-left: 1.5em;}
     .btn-grad{margin-left: 20em;}
-    .dropdown:hover .uldrop{display: block;}
-    .uldrop{left: 30px;}
-    .lidrop{width: 200px;}
+    .navbar .nav-item:hover .dropdown-menu{display: block;}
 }
 
 @media(min-width: 1200px) and (max-width: 1400px){
@@ -71,7 +65,7 @@ ul.uldrop .lidrop:last-child{border-bottom: none;}
 
 @media(min-width: 992px) and (max-width: 1199px){
     .btn-grad{position: absolute;
-        top: 10px;
+        top: 30px;
         right: 30px;}
 }
 
@@ -86,16 +80,6 @@ ul.uldrop .lidrop:last-child{border-bottom: none;}
         margin-left: 20px;
         margin-bottom: 15px;
     }
-    .dropdown:hover .uldrop{
-        display: block;
-        width: 100px;
-    }
-    .uldrop{position: relative;}
-    .lidrop{width: 720% !important;}
     .navbar-nav .nav-item{border-bottom: 1px solid #333; width: 93.5%;;}
     .navbar-nav .nav-item:last-child{border-bottom: none;}
-}
-
-@media(max-width: 761px){
-    .lidrop{width: 385% !important;}
 }

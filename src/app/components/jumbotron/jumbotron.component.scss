@@ -71,6 +71,7 @@ h5{
     text-decoration: none;
 }
 
+@media(max-width: 761px){.ct1{height: 620px;}}
 @media(max-width: 991px){
     .ct2{width: 92%;}
     .btn-grad2{
@@ -102,7 +103,7 @@ h5{
         height: 50px;
     }
     .ct1{
-        height: 800px;
+        height: 720px;
     }
     .ct2{
         width: 555px;
