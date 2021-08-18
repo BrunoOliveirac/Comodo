@@ -1,0 +1,20 @@
+<div class="d-flex h-100 align-items-center justify-content-center">
+    <div class="row">
+        <h1 class="text-center fw-bold fs-1 mb-4">Entrar</h1>
+        <div>
+            <div class="mb-3">
+                <label for="text" class="form-label">Nome</label>
+                <input [(ngModel)]="registroUsuario.nome" type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input [(ngModel)]="registroUsuario.email" type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input [(ngModel)]="registroUsuario.senha" type="password" class="form-control" id="senha">
+            </div>
+            <button class="btn-grad mx-auto" type="submit" (click)="Registrar()">Registrar</button>
+        </div>        
+    </div>
+</div>

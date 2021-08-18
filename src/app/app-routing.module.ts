@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { PageRegisterComponent } from './components/pages/page-register/page-register.component';
+import { AuthGuard } from './components/guards/auth-guard';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { PageAboutComponent } from './components/pages/page-about/page-about.component';
 import { PageBlogComponent } from './components/pages/page-blog/page-blog.component';
@@ -14,27 +16,33 @@ import { PagePricingComponent } from './components/pages/page-pricing/page-prici
 
 const routes: Routes = [
 
-  {path: '', component: PageHomeComponent},
-  {path: 'home', component: PageHomeComponent},
-  {path: 'about', component: PageAboutComponent},
-  {path: 'gallery', component: PageGalleryComponent},
-   {path: 'pages', children: [
-     {path: 'pricing', component: PagePricingComponent},
-     {path: 'games', component: PageGamesComponent},
-     {path: 'elements', component: PageElementsComponent},
-   ]},
-   {path: 'blog', children: [
-     {path: 'about', component: PageBlogComponent},
-     {path: 'details', component: BlogDetailsComponent},
-   ]},
-   {path: 'contact', component: PageContactComponent},
-   {path: 'login', component: PageLoginComponent}
-]; 
+  { path: '', component: PageHomeComponent},
+  { path: 'home', component: PageHomeComponent, canActivate: [AuthGuard]},
+  { path: 'about', component: PageAboutComponent},
+  { path: 'gallery', component: PageGalleryComponent, canActivate: [AuthGuard]},
+  {
+    path: 'pages', children: [
+      { path: 'pricing', component: PagePricingComponent},
+      { path: 'games', component: PageGamesComponent},
+      { path: 'elements', component: PageElementsComponent}
+    ], canActivate: [AuthGuard]
+  },
+  {
+    path: 'blog', children: [
+      { path: 'about', component: PageBlogComponent},
+      { path: 'details', component: BlogDetailsComponent},
+    ], canActivate: [AuthGuard]
+  },
+  { path: 'contact', component: PageContactComponent},
+  { path: 'login', component: PageLoginComponent},
+  { path: 'register', component: PageRegisterComponent},
+
+];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'}
-    )],
+  imports: [BrowserModule, RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }
+  )],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
 }

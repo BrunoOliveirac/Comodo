@@ -1,6 +1,17 @@
-<div class="container d-flex justify-content-center">
-    <img src="" alt="">
-    <div class="row">
-        
+<div class="d-flex bg-light h-100 align-items-center justify-content-center">
+    <div class="row bg-white py-5 px-4">
+        <h1 class="text-center fw-bold fs-1 mb-4">Entrar</h1>
+        <div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input [(ngModel)]="usuario.email" type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input [(ngModel)]="usuario.senha" type="password" class="form-control" id="senha">
+            </div>
+            <button class="btn-grad mx-auto mt-4 mb-3" type="submit" (click)="Logar()">Login</button>
+            <a href="" [routerLink]="['/register']" class="d-flex justify-content-center mt-2">Não tem uma conta? Registre-se</a>
+        </div>        
     </div>
 </div>
