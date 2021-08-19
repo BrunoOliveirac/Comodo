@@ -9,9 +9,18 @@
                 <p class="px-3 ps-md-5 pt-lg-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 <div class="row mt-4 px-1 px-md-5">
                     <div class="col-2 mt-lg-3">
-                        <button class="mdl-button">
-                            <a href="https://www.youtube.com/watch?v=vParh5wE-tM"><i class="material-icons pt-1">play_arrow</i></a>
-                        </button>
+                        <button class="mdl-button" data-bs-toggle="modal" data-bs-target="#buttonmodal"><i class="material-icons pt-1">play_arrow</i></button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="buttonmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog m-0">
+                              <div class="modal-content border-0">
+                                <div class="modal-body p-0">
+                                    <iframe src="https://www.youtube.com/embed/YreOOdtINhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div class="col-8 pt-3 mt-lg-3">
                         <p>WATCH THE VIDEO</p>

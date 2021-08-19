@@ -4,13 +4,13 @@
         <div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input [(ngModel)]="usuario.email" type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email">
             </div>
             <div class="mb-3">
                 <label for="senha" class="form-label">Senha</label>
-                <input [(ngModel)]="usuario.senha" type="password" class="form-control" id="senha">
+                <input type="password" class="form-control" id="senha">
             </div>
-            <button class="btn-grad mx-auto mt-4 mb-3" type="submit" (click)="Logar()">Login</button>
+            <button class="btn-grad mx-auto mt-4 mb-3" type="submit">Login</button>
             <a href="" [routerLink]="['/register']" class="d-flex justify-content-center mt-2">Não tem uma conta? Registre-se</a>
         </div>        
     </div>

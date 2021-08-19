@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../page-login/auth.service';
-import { RegistroUsuario } from './registroUsuario';
 
 @Component({
   selector: 'app-page-register',
@@ -9,16 +7,8 @@ import { RegistroUsuario } from './registroUsuario';
 })
 export class PageRegisterComponent implements OnInit {
 
-  public registroUsuario: RegistroUsuario = new RegistroUsuario();
+  constructor() { }
 
-  constructor(private authService: AuthService) { }
-
-  ngOnInit(): void {
-    this.registroUsuario = new RegistroUsuario();
-  }
-
-  Registrar(){
-    this.authService.Registrar(this.registroUsuario);
-  }
+  ngOnInit(): void {}
 
 }

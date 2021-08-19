@@ -28,10 +28,9 @@ import { PageContactComponent } from './components/pages/page-contact/page-conta
 import { PageHomeComponent } from './components/pages/page-home/page-home.component';
 import { PageLoginComponent } from './components/pages/page-login/page-login.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { AuthService } from './components/pages/page-login/auth.service';
 import { FormsModule } from '@angular/forms';
-import { AuthGuard } from './components/guards/auth-guard';
 import { PageRegisterComponent } from './components/pages/page-register/page-register.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +66,7 @@ import { PageRegisterComponent } from './components/pages/page-register/page-reg
     IvyCarouselModule,
     FormsModule
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
