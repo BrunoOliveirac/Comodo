@@ -31,6 +31,17 @@ p{
     animation: animate 3s linear infinite;
 }
 
+.modal-header{
+    background-color: black;
+    button{
+        right: 10px;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.modal-fullscreen .modal-body{overflow-y: hidden;}
+
 .modal-body, iframe{
     width: 100%;
     height: 50px;
