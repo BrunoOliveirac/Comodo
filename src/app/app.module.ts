@@ -30,6 +30,7 @@ import { PageLoginComponent } from './components/pages/page-login/page-login.com
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FormsModule } from '@angular/forms';
 import { PageRegisterComponent } from './components/pages/page-register/page-register.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { PageRegisterComponent } from './components/pages/page-register/page-reg
     BrowserAnimationsModule,
     MatToolbarModule,
     IvyCarouselModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
